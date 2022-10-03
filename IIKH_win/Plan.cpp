@@ -47,11 +47,9 @@ void Plan::showPlan() {
     year = date.getYear();
     month = date.getMonth();
     day = date.getDay();
-    comment = date.getComment();
 
     cout << "------------------------------------------------"<< endl;
 	cout <<  year << " / " << month << " / " << day << " / " << meal_type << endl;
-	cout << "Comment : " << comment << endl;	
 
 	cout << endl << "-menu-" <<  endl;
 

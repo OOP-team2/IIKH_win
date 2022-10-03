@@ -2,8 +2,8 @@
 // Created by HoJoonEum on 2022/09/27.
 //
 
-#ifndef OOP_PROJ1_PLAN_H
-#define OOP_PROJ1_PLAN_H
+#ifndef OOP_IIKH_WIN_PLAN_H
+#define OOP_IIKH_WIN_PLAN_H
 
 #include "Meal.h"
 #include "Date.h"
@@ -27,4 +27,4 @@ public:
 };
 
 
-#endif //OOP_PROJ1_PLAN_H
+#endif //OOP_IIKH_WIN_PLAN_H

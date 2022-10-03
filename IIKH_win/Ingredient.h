@@ -1,6 +1,6 @@
 
-#ifndef OOP_PROJ1_INGREDIENT_H
-#define OOP_PROJ1_INGREDIENT_H
+#ifndef OOP_IIKH_WIN_INGREDIENT_H
+#define OOP_IIKH_WIN_INGREDIENT_H
 
 #include "string"
 using namespace std;
@@ -18,4 +18,4 @@ public:
 	string getWeight();
 };
 
-#endif //OOP_PROJ1_INGREDIENT_H
+#endif //OOP_IIKH_WIN_INGREDIENT_H

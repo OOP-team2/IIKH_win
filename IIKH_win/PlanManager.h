@@ -2,8 +2,8 @@
 // Created by HoJoonEum on 2022/09/26.
 //
 
-#ifndef OOP_PROJ1_PLANMANAGER_H
-#define OOP_PROJ1_PLANMANAGER_H
+#ifndef OOP_IIKH_WIN_PLANMANAGER_H
+#define OOP_IIKH_WIN_PLANMANAGER_H
 
 #include "vector"
 #include "Plan.h"
@@ -25,4 +25,4 @@ public:
 };
 
 
-#endif //OOP_PROJ1_PLANMANAGER_H
+#endif //OOP_IIKH_WIN_PLANMANAGER_H
