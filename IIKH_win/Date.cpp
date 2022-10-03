@@ -8,13 +8,11 @@ Date::Date() {
     year = 0;
     month = 0;
     day = 0;
-    comment = "";
 }
-Date::Date(int new_year, int new_month, int new_day, std::string new_comment) {
+Date::Date(int new_year, int new_month, int new_day) {
     year = new_year;
     month = new_month;
     day = new_day;
-    comment = new_comment;
 }
 
 int Date::getYear() {
@@ -39,14 +37,6 @@ int Date::getDay() {
 
 void Date::setDay(int new_day) {
     day = new_day;
-}
-
-std::string Date::getComment() {
-    return comment;
-}
-
-void Date::setComment(std::string new_comment) {
-    comment = new_comment;
 }
 
 bool Date::operator==(Date otherDate) {
