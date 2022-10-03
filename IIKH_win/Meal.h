@@ -5,28 +5,23 @@
 #ifndef OOP_IIKH_WIN_MEAL_H
 #define OOP_IIKH_WIN_MEAL_H
 
-#include <vector>
+#include "map"
 #include "Serving.h"
-
-// enum for distinguish Meal Type
-enum MealType { breakfast, launch, dinner };
 
 // class for Meal
 class Meal {
 private:
     // member variable for saving Serving as a sequence
-    std::vector<Serving> servings;
+    std::map<int, Serving> servings;
     // member variable for saving number of people for a meal
     int people = 0;
     // member variable to distinguish each meal created
-    int id;
+    int serving_id = 0;
 public:
+    // enum for distinguish Meal Type
+    enum MealType { breakfast, launch, dinner };
     // default constructor
     Meal();
-    // constructor having a parameter for id
-    Meal(int& new_id);
-    // getter for getting id of a meal
-    int getId();
     // setter for setting people
     void setPeople(int new_people);
     // getter for getting people
@@ -34,13 +29,12 @@ public:
     // function to add a Serving
     void addServing(Serving serving);
     // function to delete a Serving
-    void deleteServing(Serving serving_to_delete);
+    void deleteServing(int serving_id);
     // function to print out servings
     void showServings();
     // fucntion to get servings
-    std::vector<Serving> getServings();
-    // operator == overloading to examine equality
-    bool operator== (Meal otherMeal);
+    std::map<int, Serving> getServings();
+
 };
 
 
