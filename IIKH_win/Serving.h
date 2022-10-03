@@ -10,13 +10,10 @@
 class Serving {
 private:
     std::string name;
-    int id;
 public:
-    Serving(int& new_id, std::string serving_name);
-    int getId();
+    Serving(std::string serving_name);
     std::string getName();
     void setName(std::string new_name);
-    bool operator==(Serving otherServing);
 };
 
 

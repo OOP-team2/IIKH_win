@@ -5,6 +5,7 @@
 #include "PlanManager.h"
 #include "iostream"
 #include "Date.h"
+#include "Meal.h"
 
 using namespace std;
 PlanManager::PlanManager() {};
@@ -21,9 +22,6 @@ void PlanManager::deletePlan(Plan plan) {
     return;
 }
 void PlanManager::reviseMeal(Plan plan, Meal meal) {
-    return;
-}
-void PlanManager::reviseMealType(Plan plan, MealType meal_type) {
     return;
 }
 void PlanManager::reviseDate(Plan plan, Date date) {

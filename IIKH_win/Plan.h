@@ -9,20 +9,34 @@
 #include "Date.h"
 
 // 
+
+// class for Plan
 class Plan {
 private:
-    Meal menu;
-    MealType meal_type;
+    // a variable for save a meal
+    Meal meal;
+    // a variable for saving a meal type
+    Meal::MealType meal_type;
+    // a variable for saving a date for a plan
     Date date;
 public:
-    Plan(Meal new_menu, MealType new_meal_type, Date new_date);
+    // a constructor for a Plan
+    Plan(Meal new_meal, Meal::MealType new_meal_type, Date new_date);
+    // a getter returning date
     Date getDate();
-    Meal getMeal();
-    MealType getMealType();
+    // a setter to set date 
     void setDate(Date new_date);
-    void setMealType(MealType new_meal_type);
-    void setMeal(Meal new_menu);
+    // a getter returning meal
+    Meal getMeal();
+    // a setter to set a meal
+    void setMeal(Meal new_meal);
+    // a getter returning meal type
+    Meal::MealType getMealType();
+    // a setter to set meal type
+    void setMealType(Meal::MealType new_meal_type);
+    // a function to show all plans
     void showPlan();
+    // a operator overloaded to compare two plans
     bool operator== (Plan otherPlan);
 };
 
