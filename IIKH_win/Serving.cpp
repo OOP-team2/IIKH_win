@@ -4,15 +4,11 @@
 
 #include "Serving.h"
 
-Serving::Serving(int& new_id, std::string serving_name) {
-    id = new_id;
+// a constructor for 
+Serving::Serving(std::string serving_name) {
     name = serving_name;
-    id++;
 }
 
-int Serving::getId() {
-    return id;
-}
 
 std::string Serving::getName() {
     return name;
@@ -20,14 +16,5 @@ std::string Serving::getName() {
 
 void Serving::setName(std::string new_name) {
     name = new_name;
-}
-
-bool Serving::operator== (Serving otherServing) {
-    if (name == otherServing.getName()) {
-        return true;
-    }
-    else {
-        return false;
-    }
 }
 
