@@ -8,8 +8,8 @@
 #include <iostream>
 using namespace std;
 
-Plan::Plan(Meal new_menu, MealType new_meal_type, Date new_date) {
-    menu = new_menu;
+Plan::Plan(Meal new_meal, MealType new_meal_type, Date new_date) {
+    meal = new_meal;
     meal_type = new_meal_type;
     date = new_date;
 }
@@ -20,7 +20,7 @@ Date Plan::getDate() {
 
 Meal Plan::getMeal() {
 
-    return  menu;
+    return  meal;
 }
 
 MealType Plan::getMealType() {
@@ -36,8 +36,8 @@ void Plan::setMealType(MealType new_meal_type) {
     meal_type = new_meal_type;
 }
 
-void Plan::setMeal(Meal new_menu) {
-    menu = new_menu;
+void Plan::setMeal(Meal new_meal) {
+    meal = new_meal;
 }
 
 void Plan::showPlan() {
@@ -51,11 +51,11 @@ void Plan::showPlan() {
     cout << "------------------------------------------------"<< endl;
 	cout <<  year << " / " << month << " / " << day << " / " << meal_type << endl;
 
-	cout << endl << "-menu-" <<  endl;
+	cout << endl << "-meal-" <<  endl;
 
-	vector<Serving> servings = menu.getServings();
+	vector<Serving> servings = meal.getServings();
 	for (int i = 0; i < servings.size(); i++) {
-		std::cout << "Menu Name:	" << servings[i].getName() << endl;
+		std::cout << "meal Name:	" << servings[i].getName() << endl;
 		std::cout << "Num of People:	" << servings[i].getId() << endl;
 	}
 	cout << endl;
@@ -63,7 +63,7 @@ void Plan::showPlan() {
 }
 
 bool Plan::operator==(Plan otherPlan) {
-    if (menu == otherPlan.getMeal() && meal_type == otherPlan.getMealType() && date == otherPlan.getDate()) {
+    if (meal == otherPlan.getMeal() && meal_type == otherPlan.getMealType() && date == otherPlan.getDate()) {
         return true;
     }
     else {
