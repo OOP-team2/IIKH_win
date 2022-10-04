@@ -48,18 +48,18 @@ void Plan::showPlan() {
     month = date.getMonth();
     day = date.getDay();
 
-    cout << "------------------------------------------------"<< endl;
-	cout <<  year << " / " << month << " / " << day << " / " << meal_type << endl;
+    cout << "------------------------------------------------" << endl;
+    cout << year << " / " << month << " / " << day << " / " << meal_type << endl;
 
-	cout << endl << "-meal-" <<  endl;
+    cout << endl << "-meal-" << endl;
 
-	vector<Serving> servings = meal.getServings();
-	for (int i = 0; i < servings.size(); i++) {
-		std::cout << "meal Name:	" << servings[i].getName() << endl;
-		std::cout << "Num of People:	" << servings[i].getId() << endl;
-	}
-	cout << endl;
-	return;
+    vector<Serving> servings = meal.getServings();
+    for (int i = 0; i < servings.size(); i++) {
+        std::cout << "meal Name:	" << servings[i].getName() << endl;
+        std::cout << "Num of People:	" << servings[i].getId() << endl;
+    }
+    cout << endl;
+    return;
 }
 
 bool Plan::operator==(Plan otherPlan) {
