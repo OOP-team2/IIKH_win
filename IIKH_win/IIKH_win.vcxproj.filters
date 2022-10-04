@@ -33,12 +33,6 @@
     <ClCompile Include="PlanManager.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Serving.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Greeter.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Date.h">
@@ -54,12 +48,6 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="PlanManager.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Serving.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Greeter.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

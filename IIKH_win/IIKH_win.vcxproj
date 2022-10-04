@@ -128,22 +128,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Date.cpp" />
-    <ClCompile Include="Greeter.cpp" />
     <ClCompile Include="IIKH_win.cpp" />
     <ClCompile Include="Ingredient.cpp" />
     <ClCompile Include="Meal.cpp" />
     <ClCompile Include="Plan.cpp" />
     <ClCompile Include="PlanManager.cpp" />
-    <ClCompile Include="Serving.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Date.h" />
-    <ClInclude Include="Greeter.h" />
     <ClInclude Include="Ingredient.h" />
     <ClInclude Include="Meal.h" />
     <ClInclude Include="Plan.h" />
     <ClInclude Include="PlanManager.h" />
-    <ClInclude Include="Serving.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
