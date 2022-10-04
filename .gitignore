@@ -33,3 +33,5 @@
 
 # Visual C++ cahce files
 *.opendb
+
+.vs/*
