@@ -8,9 +8,7 @@
 #include "Meal.h"
 #include "Date.h"
 
-// 
-
-// class for Plan
+// class for Plan entity
 class Plan {
 private:
     // a variable for save a meal
