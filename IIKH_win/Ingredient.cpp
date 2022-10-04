@@ -5,11 +5,11 @@
 
 Ingredient::Ingredient() {
 	name = "";
-	weight = "";
+	quantity = "";
 }
-Ingredient::Ingredient(std::string new_name, std::string new_weight) {
+Ingredient::Ingredient(std::string new_name, std::string new_quantity) {
 	name = new_name;
-	weight = new_weight;
+	quantity = new_quantity;
 }
 
 std::string Ingredient::getName() {
@@ -20,10 +20,10 @@ void Ingredient::setName(std::string new_name) {
 	name = new_name;
 }
 
-std::string Ingredient::getWeight() {
-	return weight;
+std::string Ingredient::getQuantity() {
+	return quantity;
 }
 
-void Ingredient::setWeight(std::string new_weight) {
-	weight = new_weight;
+void Ingredient::setQuantity(std::string new_quantity) {
+	quantity = new_quantity;
 }
